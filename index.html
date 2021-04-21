@@ -64,26 +64,26 @@
       
          <div class = "px-4 py-2 lg:pb-3 mt-2 text-xl font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"x-data="{open: false}">
         
-            <a x-on:click.prevent="open = true" class="" href="">Send Us a Text</a>
+            <a target = "_blank"  x-on:click.prevent="open = true" class="" href="">Send us a Text</a>
         
       
         <div x-show.transition.opacity="open" class="p-4 fixed flex justify-center items-center inset-0 bg-black text-black bg-opacity-75 z-50">
                 <form x-on:click.away="open = false" x-show.transition="open" class="max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
                         <h3 class="mb-6 text-2xl font-medium text-black text-center">Send us a Text</h3>
                         <div class="block mb-4 border border-gray-200 rounded-lg">
-                            <input type="text" name="first-name" id="1-first-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="First Name">
+                            <input type="text" name="first-name" id="2-first-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="First Name">
                         </div>
                         <div class="block mb-4 border border-gray-200 rounded-lg">
-                            <input type="text" name="last-name" id="1-last-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Last Name">
+                            <input type="text" name="last-name" id="2-last-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Last Name">
                         </div>
                         <div class="block mb-4 border border-gray-200 rounded-lg">
-                            <input type="text" name="phone-number" id="1-phone-number" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Phone Number">
+                            <input type="text" name="phone-number" id="2-phone-number" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Phone Number">
                         </div>
                         <div class="block mb-4 border border-gray-200 rounded-lg">
-                            <textarea name="message" cols="5" id="1-message" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="What is your message?"></textarea>
+                            <textarea name="message" cols="5" id="2-message" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="What is your message?"></textarea>
                         </div>
                         <div class="block">
-                            <button type="button" onclick= "send_sms(1, 'Primal-Ink-Designs')" class="w-full px-3 py-4 font-bold font-lg text-white  bg-black   rounded-lg">Send</button>
+                        <button type="button"  onclick= "send_sms(2, 'Primal-Ink-Designs')" class="w-full px-3 py-4 font-bold font-lg text-white  bg-black   rounded-lg">Send</button> 
                         </div>
                         
     
@@ -104,7 +104,7 @@
     <div class="flex justify-end p-8 bg-black-900 lg:py-32 lg:px-16 lg:pl-10 lg:w-1/2">
         <div class="flex flex-col items-center lg:items-start justify-center w-full lg:max-w-lg">
             <h5 class="mb-3 text-3xl text-center font-extrabold  leading-none sm:text-4xl lg:text-7xl text-center lg:text-left">
-                Primal Ink Designs
+                Primal Ink Designs  
             </h5>
             
             <p class="py-5 mb-5 lg:text-xl text-center lg:text-left">
@@ -113,26 +113,26 @@
             
             <div class="flex text-center justify-center items-center" x-data="{open: false}">
                 <button type="button" x-on:click.prevent="open = true" class="inline-flex items-center justify-center h-24 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none  bg-black text-white hover:bg-green-200 hover:text-black ">
-                    <h5 class="text-3xl font-extrabold">Send us a text</h5> 
+                    <h5 class="text-3xl font-extrabold">Send us a Text</h5> 
                 </button>
                 <div x-show.transition.opacity="open" class="p-4 fixed flex justify-center items-center inset-0 bg-black bg-opacity-75 z-50">
                     <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
                             <h3 class="mb-6 text-2xl font-medium text-black text-center">Send us a Text</h3>
-                            <div class="block mb-4 border border-gray-200 rounded-lg">
-                                <input type="text" name="first-name" id="2-first-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="First Name">
-                            </div>
-                            <div class="block mb-4 border border-gray-200 rounded-lg">
-                                <input type="text" name="last-name" id="2-last-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Last Name">
-                            </div>
-                            <div class="block mb-4 border border-gray-200 rounded-lg">
-                                <input type="text" name="phone-number" id="2-phone-number" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Phone Number">
-                            </div>
-                            <div class="block mb-4 border border-gray-200 rounded-lg">
-                                <textarea name="message" cols="5" id="2-message" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="What is your message?"></textarea>
-                            </div>
-                            <div class="block">
-                                <button type="button" onclick= "send_sms(2, 'Primal-Ink-Designs')" id= "send" class="w-full px-3 py-4 font-bold font-lg text-white  bg-black   rounded-lg">Send</button>
-                            </div>
+                        <div class="block mb-4 border border-gray-200 rounded-lg">
+                            <input type="text" name="first-name" id="1-first-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="First Name">
+                        </div>
+                        <div class="block mb-4 border border-gray-200 rounded-lg">
+                            <input type="text" name="last-name" id="1-last-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Last Name">
+                        </div>
+                        <div class="block mb-4 border border-gray-200 rounded-lg">
+                            <input type="text" name="phone-number" id="1-phone-number" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="Phone Number">
+                        </div>
+                        <div class="block mb-4 border border-gray-200 rounded-lg">
+                            <textarea name="message" cols="5" id="1-message" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="What is your message?"></textarea>
+                        </div>
+                        <div class="block">
+                        <button type="button"  onclick= "send_sms(1, 'Primal-Ink-Designs')" class="w-full px-3 py-4 font-bold font-lg text-white  bg-black   rounded-lg">Send</button> 
+                        </div>
                             
      
                     </form>
@@ -156,7 +156,7 @@
     <section id = "about" class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  bg-black text-white ">
         <div class="relative lg:w-1/2">
             
-            <img src="https://landing-page-app-hero-images.s3.amazonaws.com/media/YN9MHSYWQVL9XAB60AXP8FELO8AUJDTIJ6018VLE.jpeg" alt="About Us Image" class="object-cover w-full lg:absolute h-80 lg:h-full">
+            <img src="https://landing-page-app-hero-images.s3.amazonaws.com/media/9R7C3STW6PNQ6H6GXXM65ES080QK8IWT4V3NWYMH.jpeg" alt="About Us Image" class="object-cover w-full lg:absolute h-80 lg:h-full">
             
         </div>
         <div class="py-5 lg:py-0 flex flex-col lg:py-32 lg:px-16 lg:w-1/2">
